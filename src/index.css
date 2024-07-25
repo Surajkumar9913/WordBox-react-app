@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-button {
+    @apply bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 focus:outline-none focus:ring-1 focus:ring-green-600 focus:ring-opacity-50  transition duration-300 m-1;
+  }
