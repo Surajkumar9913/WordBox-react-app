@@ -50,7 +50,7 @@ const Home = () => {
 
     return (
 
-        <div className=' w-3/5 mx-auto mt-8 h-screen' >
+        <div className=' w-[90%] mx-auto mt-8 ' >
             <h1
                 className='text-2xl text-slate-700 font-semibold'>
                 Enter the text and analyze below
@@ -60,7 +60,7 @@ const Home = () => {
                 {copy}</p>
             }
             <textarea
-                className='border rounded border-green-500 focus:outline-green-500  w-full h-40 p-4 my-2'
+                className='border rounded border-green-500 focus:outline-green-500  w-full h-40 p-4 my-2 xl:w-4/5'
                 name="input"
                 id="input"
                 value={text}
