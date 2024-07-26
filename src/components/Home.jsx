@@ -21,7 +21,7 @@ const Home = () => {
     const handleCopy = () => {
         navigator.clipboard.writeText(text)
             .then(() => {
-                setCopy("Copied!")
+                setCopy('Copied!')
                 setTimeout(() => { setCopy('') }, 2000);
             })
     }
@@ -55,9 +55,9 @@ const Home = () => {
                 className='text-2xl text-slate-700 font-semibold'>
                 Enter the text and analyze below
             </h1>
-            {copy && <p
-                className='w-40 bg-gray-100 py-2 px-4 text-center border rounded text-blue-700 font-bold fixed right-5 top-20'>
-                {copy}</p>
+            {copy &&
+                <p className=' w-40 break-words bg-gray-100 py-2 px-4 text-center border rounded text-blue-700 font-bold fixed right-5 top-20'>
+                    {copy}</p>
             }
             <textarea
                 className='border rounded border-green-500 focus:outline-green-500  w-full h-40 p-4 my-2 xl:w-4/5'
@@ -78,13 +78,18 @@ const Home = () => {
                     className='text-xl font-medium '>
                     Enter Text Summary
                 </h1>
-                <p>{wordcount} Word and {charcount} Characters</p>
+                <p>
+                    {wordcount} Word and {charcount} Characters
+                </p>
 
             </div>
 
-            <div className='text-slate-700 mt-4'>
+            <div className='text-slate-700 mt-4 '>
                 <h1 className='text-xl font-medium ' >Preview</h1>
-                <p>{text ? text : 'Enter Some Text in above Text Area'}</p>
+                <p className="w-full break-words">
+                    {text ? text : 'Enter Some Text in above Text Area'}
+                </p>
+
             </div>
         </div>
 
